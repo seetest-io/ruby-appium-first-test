@@ -5,15 +5,12 @@ class TestYouriOSApp < Test::Unit::TestCase
  def setup
      desired_caps = {
          caps: {
-             #In order to use the grid code generation, you need to be connected to the cloud
              accessKey: '<ACCESS_KEY>',
              platformName: 'ios',
 			 projectName: '<YOUR_PROJECT_NAME>',
 			 testName: '<TEST_NAME>'
 			 app: 'cloud:<BUNDLE_ID>',
              bundleId: '<BUNDLE_ID>',
-
-			 
          },
 		 	appium_lib: {
 			

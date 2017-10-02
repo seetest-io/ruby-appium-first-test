@@ -7,12 +7,11 @@ class TestYourAndroidApp < Test::Unit::TestCase
          caps: {
              accessKey: '<ACCESS_KEY>',
              platformName: 'ios',
-			 projectName: '<YOUR_PROJECT_NAME>',
 			 testName: '<TEST_NAME>'
+			 projectName: '<YOUR_PROJECT_NAME>',
 			 app: 'cloud:<BUNDLE_ID>',
 			 appPackage: '<BUNDLE_ID>',
-             appActivity: '<ACTIVITY>'
-			 
+             appActivity: '<ACTIVITY>' 
          },
 		 	appium_lib: {
 			
