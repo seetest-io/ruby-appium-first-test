@@ -5,16 +5,15 @@ class TestYourAndroidApp < Test::Unit::TestCase
  def setup
      desired_caps = {
          caps: {
-             accessKey: '<ACCESS_KEY>',
-             platformName: 'ios',
-			 testName: '<TEST_NAME>'
-			 projectName: '<YOUR_PROJECT_NAME>',
-			 app: 'cloud:<BUNDLE_ID>',
-			 appPackage: '<BUNDLE_ID>',
-             appActivity: '<ACTIVITY>' 
+		accessKey: '<ACCESS_KEY>',
+		platformName: 'ios',
+		testName: '<TEST_NAME>'
+		projectName: '<YOUR_PROJECT_NAME>',
+		app: 'cloud:<BUNDLE_ID>',
+		appPackage: '<BUNDLE_ID>',
+		appActivity: '<ACTIVITY>' 
          },
-		 	appium_lib: {
-			
+		appium_lib: {	
 			server_url: 'https://cloud.experitest.com:443/wd/hub',
 		}
      }
