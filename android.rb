@@ -21,7 +21,7 @@ class TestYourAndroidApp < Test::Unit::TestCase
      @driver.start_driver
  end
  
- def test_ios
+ def test_android
 	#run your test
  end
  
