@@ -6,7 +6,7 @@ class TestYourAndroidApp < Test::Unit::TestCase
      desired_caps = {
          caps: {
 		accessKey: '<ACCESS_KEY>',
-		platformName: 'ios',
+		platformName: 'android',
 		testName: '<TEST_NAME>'
 		projectName: '<YOUR_PROJECT_NAME>',
 		app: 'cloud:<BUNDLE_ID>',
