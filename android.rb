@@ -5,12 +5,12 @@ class TestYourAndroidApp < Test::Unit::TestCase
  def setup
      desired_caps = {
          caps: {
-            accessKey: '<ACCESS_KEY>',
+            accessKey: ENV['accessKey'],
             platformName: 'android',
-            testName: '<TEST_NAME>',
-            app: 'cloud:<BUNDLE_ID>',
-            appPackage: '<BUNDLE_ID>',
-            appActivity: '<ACTIVITY>'
+            testName: 'Android App test',
+            app: 'cloud:com.experitest.ExperiBank/.LoginActivity',
+            appPackage: 'com.experitest.ExperiBank',
+            appActivity: '.LoginActivity'
                  },
             appium_lib: {
               server_url: 'https://cloud.experitest.com:443/wd/hub',
@@ -21,7 +21,16 @@ class TestYourAndroidApp < Test::Unit::TestCase
  end
  
  def test_android
-	#run your test
+   @driver.find_element(:xpath, "//*[@id='Username']").send_keys 'company'
+   @driver.find_element(:xpath, "//*[@id='Password']").send_keys 'company'
+   @driver.find_element(:xpath, "//*[@id='loginButton']").click
+   @driver.find_element(:xpath, "//*[@text='Make Payment']").click
+   @driver.find_element(:xpath, "//*[@id='Phone']").send_keys '123456'
+   @driver.find_element(:xpath, "//*[@id='Name']").send_keys 'Test'
+   @driver.find_element(:xpath, "//*[@id='Amount']").send_keys '5'
+   @driver.find_element(:xpath, "//*[@id='Country']").send_keys 'US'
+   @driver.find_element(:xpath, "//*[@text='Send Payment']").click
+   @driver.find_element(:xpath, "//*[@text='Yes']").click
  end
  
  def teardown

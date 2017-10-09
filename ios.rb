@@ -5,11 +5,11 @@ class TestYouriOSApp < Test::Unit::TestCase
  def setup
      desired_caps = {
          caps: {
-            accessKey: '<ACCESS_KEY>',
+            accessKey: ENV['accessKey'],
             platformName: 'ios',
-            testName: '<TEST_NAME>',
-            app: 'cloud:<BUNDLE_ID>',
-            bundleId: '<BUNDLE_ID>',
+            testName: 'iOS App Test',
+            app: 'cloud:com.experitest.ExperiBank',
+            bundleId: 'com.experitest.ExperiBank',
                  },
             appium_lib: {
               server_url: 'https://cloud.experitest.com:443/wd/hub',
@@ -20,7 +20,16 @@ class TestYouriOSApp < Test::Unit::TestCase
  end
  
  def test_ios
-	#run your test
+   @driver.find_element(:xpath, "//*[@text='Username']").send_keys 'company'
+   @driver.find_element(:xpath, "//*[@text='Password']").send_keys 'company'
+   @driver.find_element(:xpath, "//*[@text='loginButton']").click
+   @driver.find_element(:xpath, "//*[@text='makePaymentButton']").click
+   @driver.find_element(:xpath, "//*[@text='Phone']").send_keys '123456'
+   @driver.find_element(:xpath, "//*[@text='Name']").send_keys 'Test'
+   @driver.find_element(:xpath, "//*[@text='Amount']").send_keys '5'
+   @driver.find_element(:xpath, "//*[@text='Country']").send_keys 'US'
+   @driver.find_element(:xpath, "//*[@text='sendPaymentButton']").click
+   @driver.find_element(:xpath, "//*[@text='Yes']").click
  end
  
  def teardown

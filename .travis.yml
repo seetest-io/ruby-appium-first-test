@@ -1,0 +1,9 @@
+language: ruby
+rvm:
+  - 2.4.1
+  - jruby
+  - 2.4.1p111
+
+script:
+  - ruby ios.rb
+  - ruby android.rb
