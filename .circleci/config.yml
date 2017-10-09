@@ -19,6 +19,8 @@ jobs:
     steps:
       - checkout
 
+      - run: ls -R
+
       # Download and cache dependencies
       - restore_cache:
           keys:
