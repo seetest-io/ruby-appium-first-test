@@ -21,15 +21,15 @@ class TestYourAndroidApp < Test::Unit::TestCase
  end
  
  def test_android
-   @driver.find_element(:xpath, "//*[@id='Username']").send_keys 'company'
-   @driver.find_element(:xpath, "//*[@id='Password']").send_keys 'company'
+   @driver.find_element(:xpath, "//*[@id='usernameTextField']").send_keys 'company'
+   @driver.find_element(:xpath, "//*[@id='passwordTextField']").send_keys 'company'
    @driver.find_element(:xpath, "//*[@id='loginButton']").click
-   @driver.find_element(:xpath, "//*[@text='Make Payment']").click
-   @driver.find_element(:xpath, "//*[@id='Phone']").send_keys '123456'
-   @driver.find_element(:xpath, "//*[@id='Name']").send_keys 'Test'
-   @driver.find_element(:xpath, "//*[@id='Amount']").send_keys '5'
-   @driver.find_element(:xpath, "//*[@id='Country']").send_keys 'US'
-   @driver.find_element(:xpath, "//*[@text='Send Payment']").click
+   @driver.find_element(:xpath, "//*[@id='makePaymentButton']").click
+   @driver.find_element(:xpath, "//*[@id='phoneTextField']").send_keys '123456'
+   @driver.find_element(:xpath, "//*[@id='nameTextField']").send_keys 'Test'
+   @driver.find_element(:xpath, "//*[@id='amountTextField']").send_keys '5'
+   @driver.find_element(:xpath, "//*[@id='countryTextField']").send_keys 'US'
+   @driver.find_element(:xpath, "//*[@text='sendPaymentButton']").click
    @driver.find_element(:xpath, "//*[@text='Yes']").click
  end
  
