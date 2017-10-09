@@ -29,7 +29,7 @@ jobs:
       - run:
           name: install dependencies
           command: |
-            bundle install --jobs=4 --retry=3
+            bundle install --jobs=4 --retry=3 --path ./
 
       - save_cache:
           paths:
