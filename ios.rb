@@ -7,7 +7,7 @@ class TestYouriOSApp < Test::Unit::TestCase
          caps: {
             accessKey: ENV['accessKey'],
             platformName: 'ios',
-            testName: 'iOS App Test',
+            testName: 'iOS App Test with Ruby',
             app: 'cloud:com.experitest.ExperiBank',
             bundleId: 'com.experitest.ExperiBank',
                  },

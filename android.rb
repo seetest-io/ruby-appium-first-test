@@ -7,7 +7,7 @@ class TestYourAndroidApp < Test::Unit::TestCase
          caps: {
             accessKey: ENV['accessKey'],
             platformName: 'android',
-            testName: 'Android App test',
+            testName: 'Android App test with Ruby',
             app: 'cloud:com.experitest.ExperiBank/.LoginActivity',
             appPackage: 'com.experitest.ExperiBank',
             appActivity: '.LoginActivity'
