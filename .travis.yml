@@ -1,4 +1,6 @@
 language: ruby
+install:
+  - gem install appium_lib
 script:
   - ruby ios.rb
   - ruby android.rb
