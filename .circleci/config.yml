@@ -19,8 +19,6 @@ jobs:
     steps:
       - checkout
 
-      - run: ls -R
-
       # Download and cache dependencies
       - restore_cache:
           keys:
@@ -31,7 +29,7 @@ jobs:
       - run:
           name: install dependencies
           command: |
-            bundle install --jobs=4 --retry=3 --path Gemfile.lock
+            bundle install --jobs=4 --retry=3
 
       - save_cache:
           paths:
