@@ -5,7 +5,7 @@ class TestYourAndroidApp < Test::Unit::TestCase
  def setup
      desired_caps = {
          caps: {
-            accessKey: ENV['ACCESS_KEY'],
+            accessKey: ENV['SEETEST_IO_ACCESS_KEY'],
             platformName: 'android',
             testName: 'Android App test with Ruby',
             app: 'cloud:com.experitest.ExperiBank/.LoginActivity',
