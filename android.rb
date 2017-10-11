@@ -8,7 +8,7 @@ class TestYourAndroidApp < Test::Unit::TestCase
             accessKey: ENV['SEETEST_IO_ACCESS_KEY'],
             platformName: 'android',
             testName: 'Android App test with Ruby',
-            app: 'cloud:com.experitest.ExperiBank/.LoginActivity',
+            app: 'http://d242m5chux1g9j.cloudfront.net/eribank.apk',
             appPackage: 'com.experitest.ExperiBank',
             appActivity: '.LoginActivity'
                  },

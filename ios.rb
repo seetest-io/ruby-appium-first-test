@@ -8,7 +8,7 @@ class TestYouriOSApp < Test::Unit::TestCase
             accessKey: ENV['SEETEST_IO_ACCESS_KEY'],
             platformName: 'ios',
             testName: 'iOS App Test with Ruby',
-            app: 'cloud:com.experitest.ExperiBank',
+            app: 'http://d242m5chux1g9j.cloudfront.net/eribank.ipa',
             bundleId: 'com.experitest.ExperiBank',
                  },
             appium_lib: {
