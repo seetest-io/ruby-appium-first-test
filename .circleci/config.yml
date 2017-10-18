@@ -21,10 +21,10 @@ jobs:
 
       # Download dependencies
       - run: gem install appium_lib
+      - run: gem install parallel_tests
 
       # run tests!
       - run:
           name: run tests
           command: |
-            ruby -I"lib:test" ios.rb
-            ruby -I"lib:test" android.rb
+            parallel_test android_app_test.rb android_web_test.rb ios_app_test.rb ios_web_test.rb

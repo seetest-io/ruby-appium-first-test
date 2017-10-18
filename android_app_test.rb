@@ -5,14 +5,14 @@ class TestYourAndroidApp < Test::Unit::TestCase
  def setup
      desired_caps = {
          caps: {
-            accessKey: ENV['SEETEST_IO_ACCESS_KEY'],
-            platformName: 'android',
-            testName: 'Android App test with Ruby',
-            app: 'http://d242m5chux1g9j.cloudfront.net/eribank.apk',
-            appPackage: 'com.experitest.ExperiBank',
-            appActivity: '.LoginActivity'
+             accessKey: ENV['SEETEST_IO_ACCESS_KEY'],
+             platformName: 'android',
+             testName: 'Android App test with Ruby',
+             app: 'http://d242m5chux1g9j.cloudfront.net/eribank.apk',
+             appPackage: 'com.experitest.ExperiBank',
+             appActivity: '.LoginActivity'
                  },
-            appium_lib: {
+         appium_lib: {
               server_url: 'https://cloud.experitest.com:443/wd/hub',
             }
      }

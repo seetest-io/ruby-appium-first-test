@@ -1,6 +1,6 @@
 language: ruby
 install:
   - gem install appium_lib
+  - gem install parallel_tests
 script:
-  - ruby ios.rb
-  - ruby android.rb
+  - parallel_test android_app_test.rb android_web_test.rb ios_app_test.rb ios_web_test.rb

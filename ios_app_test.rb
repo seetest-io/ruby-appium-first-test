@@ -1,5 +1,6 @@
 require 'test/unit'
 require 'appium_lib'
+require 'parallel_tests'
 
 class TestYouriOSApp < Test::Unit::TestCase
  def setup
