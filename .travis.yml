@@ -1,6 +1,9 @@
 language: ruby
 install:
-  - gem install appium_lib
-  - gem install parallel_tests
+- gem install appium_lib
+- gem install parallel_tests
 script:
-  - parallel_test android_app_test.rb android_web_test.rb ios_app_test.rb ios_web_test.rb
+- parallel_test android_app_test.rb android_web_test.rb ios_app_test.rb ios_web_test.rb
+notifications:
+  slack:
+    secure: KFZ3JM9tBCQkeItRMl6ELjMRNAkZiEop0g/IQ7xUNUcYB+Ss+quJKgoLbtMmr1ZgvMcPMfg1OGGZ0JP4pe7FNPKaTXxkudc0QC5pESPMiUCeiamPd/hZawtxP0jM2g/FqapxClpTQ/I4IpTz5mSQ4BhDMwOFe0R1k/0d8iII1a9FaUHLzKin4McRKIEQBO168HEqt1TT696f8Axy7ZtECddl3FWRUJJyEfWiCVUxF2LZgm6xnDyz12v6rswq69UrAWcOfv1sOIAB3/e1Xu1pg0Mc8F+2JNBtXmKFeLDlUUdzSSsbuRN/AYkSsHgaB+7Yvl3hHGTVwmVCEtEjJFofvvQ6vs1ZrVXOH34eAji5GroRxEhwx8dVEDeimZ1ILw+NYs0N4+Mcj9xZUwfvIYOYqGaUHNd7d6vQQS/s32a62cVAq4N/9+VY0kPr3WsNXPHcn5/95bgrnpbDtFxkp1OlCp9WvD0eTj2AY91Gcvja74R1v1l5TWBrgdzJErL2iEEdn7nmCfqpCt9VO6Sy7THPiZtZejiZfYFWnjv+oTvxY/jkhX+rsUqBupDHo3GniWRbc3+wph6/DYsY2qyq8Z8vKd9IihI+5k5PhAYz0PMXc5qTD2bxRscM0IZbv4EnyyWFfcPB8m3yPoj/89iV6fhFGxy96urwaZefgyUAd3pZSLE=
