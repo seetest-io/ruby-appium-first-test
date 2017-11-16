@@ -21,11 +21,11 @@ class TestYouriOSApp < Test::Unit::TestCase
   def test_ios
     @driver.get('https://google.com')
     @driver.find_element(:xpath, "//*[@name='q']").send_keys 'mobile autoamtion testing'
-    search_btn = driver.find_element(:xpath, "//*[@name='btnG']")
+    search_btn = @driver.find_element(:xpath, "//*[@name='btnG']")
     search_btn.click
   end
 
   def teardown
-    @driver.driver_quit
+    @driver.quit_driver
   end
 end

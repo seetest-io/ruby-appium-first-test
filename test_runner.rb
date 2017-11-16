@@ -21,7 +21,7 @@ class TestYourAndroidApp < Test::Unit::TestCase
  end
  
  def test_android
-   @driver.get('test');
+   @driver.get('test')
    @driver.press_keycode(10)
    @driver.find_element(:xpath, "//*[@id='usernameTextField']").send_keys 'company'
    @driver.find_element(:xpath, "//*[@id='passwordTextField']").send_keys 'company'
