@@ -16,8 +16,7 @@ class TestYourAndroidApp < Test::Unit::TestCase
               server_url: 'https://cloud.experitest.com:443/wd/hub',
             }
      }
-     @driver = Appium::Driver.new(desired_caps)
-     @driver.start_driver
+     @driver = Appium::Driver.new(desired_caps).start_driver
  end
  
  def test_android

@@ -15,8 +15,8 @@ class TestYouriOSApp < Test::Unit::TestCase
               server_url: 'https://cloud.experitest.com:443/wd/hub',
 		        }
      }
-     @driver = Appium::Driver.new(desired_caps, true)
-     @driver.start_driver
+     @driver = Appium::Driver.new(desired_caps, true).start_driver
+
  end
  
  def test_ios
