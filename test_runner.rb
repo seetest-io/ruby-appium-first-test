@@ -36,6 +36,6 @@ class TestYourAndroidApp < Test::Unit::TestCase
  end
  
  def teardown
-     @driver.driver_quit
+   @driver.driver_quit
  end
 end
