@@ -33,6 +33,6 @@ class TestYouriOSApp < Test::Unit::TestCase
  end
  
  def teardown
-     @driver.quit_driver
+     @driver.driver_quit
  end
 end

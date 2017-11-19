@@ -31,10 +31,10 @@ class TestYourAndroidApp < Test::Unit::TestCase
    @driver.find_element(:xpath, "//*[@id='amountTextField']").send_keys '5'
    @driver.find_element(:xpath, "//*[@id='countryTextField']").send_keys 'US'
    @driver.find_element(:xpath, "//*[@id='sendPaymentButton']").click
-   @driver.find_element(:xpath, "//*[@text='Yes']").click
+   @driver.find_element(:xpath, "//*[@id='button1']").click
  end
  
  def teardown
-     @driver.quit_driver
+     @driver.driver_quit
  end
 end

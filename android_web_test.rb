@@ -1,7 +1,7 @@
 require 'test/unit'
 require 'appium_lib'
 
-class TestYouriOSApp < Test::Unit::TestCase
+class TestYourWebAppAndroid < Test::Unit::TestCase
   def setup
     desired_caps = {
         caps: {
@@ -37,6 +37,6 @@ class TestYouriOSApp < Test::Unit::TestCase
   end
 
   def teardown
-    @driver.quit_driver
+    @driver.driver_quit
   end
 end
