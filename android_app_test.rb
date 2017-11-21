@@ -20,7 +20,6 @@ class TestYourAndroidApp < Test::Unit::TestCase
  end
  
  def test_android
-   @driver.press_keycode(82)
    @driver.find_element(:xpath, "//*[@id='usernameTextField']").send_keys 'company'
    @driver.find_element(:xpath, "//*[@id='passwordTextField']").send_keys 'company'
    @driver.find_element(:xpath, "//*[@id='loginButton']").click
