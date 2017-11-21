@@ -20,19 +20,9 @@ class TestYourWebAppiOS < Test::Unit::TestCase
 
   def test_ios
     @driver.get('https://google.com')
-    if @driver.find_elements(:xpath, "//*[@name='q']").size != 0
-      @driver.find_element(:xpath, "//*[@name='q']").send_keys 'mobile autoamtion testing'
-    else
-      @driver.find_element(:xpath, "//*[@id='lst-ib']").send_keys 'mobile autoamtion testing'
-    end
-
-    if @driver.find_elements(:xpath, "//*[@name='btnG']").size != 0
-      search_btn = @driver.find_element(:xpath, "//*[@name='btnG']")
-      search_btn.click
-    else
-      search_btn = @driver.find_element(:xpath, "//*[@id='tsbb']")
-      search_btn.click
-    end
+    @driver.find_element(:xpath, "//*[@name='q']").send_keys 'mobile autoamtion testing'
+    search_btn = @driver.find_element(:xpath, "//*[@name='btnG']")
+    search_btn.click
   end
 
   def teardown
