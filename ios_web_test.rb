@@ -26,6 +26,7 @@ class TestYourWebAppiOS < Test::Unit::TestCase
   end
 
   def teardown
+    @driver.desired_caps["reportUrl"]
     @driver.quit
   end
 end
