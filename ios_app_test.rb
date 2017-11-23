@@ -19,7 +19,7 @@ class TestYouriOSApp < Test::Unit::TestCase
 
  end
  
- def test_ios
+ def test_ios_app
    @driver.find_element(:xpath, "//*[@text='Username']").send_keys 'company'
    @driver.find_element(:xpath, "//*[@text='Password']").send_keys 'company'
    @driver.find_element(:xpath, "//*[@text='loginButton']").click

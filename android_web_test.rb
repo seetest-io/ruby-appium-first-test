@@ -18,7 +18,7 @@ class TestYourWebAppAndroid < Test::Unit::TestCase
     @driver = Appium::Driver.new(desired_caps, true).start_driver
   end
 
-  def test_ios
+  def test_android_web
     @driver.get('https://google.com')
     @driver.find_element(:xpath, "//*[@name='q']").send_keys 'mobile autoamtion testing'
     search_btn = @driver.find_element(:xpath, "//*[@name='btnG']")

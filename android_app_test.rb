@@ -19,7 +19,7 @@ class TestYourAndroidApp < Test::Unit::TestCase
      @driver = Appium::Driver.new(desired_caps).start_driver
  end
  
- def test_android
+ def test_android_app
    @driver.find_element(:xpath, "//*[@id='usernameTextField']").send_keys 'company'
    @driver.find_element(:xpath, "//*[@id='passwordTextField']").send_keys 'company'
    @driver.find_element(:xpath, "//*[@id='loginButton']").click
