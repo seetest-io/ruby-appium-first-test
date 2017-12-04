@@ -19,8 +19,8 @@ class TestYourWebAppiOS < Test::Unit::TestCase
   end
 
   def test_ios_web
-    @driver.get('https://google.com')
-    if @driver.capabilities['reportUrl'] == 'TABLET'
+    @driver.get('https://amazon.com')
+    if @driver.capabilities['device.category'].equal? 'TABLET'
       @driver.find_element(:xpath, "//*[@name='field-keywords']").send_keys 'mobile autoamtion testing'
       search_btn = @driver.find_element(:xpath, "//*[@text='Go']")
     else
