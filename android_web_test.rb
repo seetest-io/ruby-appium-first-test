@@ -19,9 +19,9 @@ class TestYourWebAppAndroid < Test::Unit::TestCase
   end
 
   def test_android_web
-    @driver.get('https://google.com')
-    @driver.find_element(:xpath, "//*[@name='q']").send_keys 'mobile autoamtion testing'
-    search_btn = @driver.find_element(:xpath, "//*[@name='btnG']")
+    @driver.get('https://amazon.com')
+    @driver.find_element(:xpath, "//*[@name='k']").send_keys 'mobile autoamtion testing'
+    search_btn = @driver.find_element(:xpath, "//*[@value='Go']")
     search_btn.click
   end
 
