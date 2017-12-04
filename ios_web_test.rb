@@ -20,8 +20,8 @@ class TestYourWebAppiOS < Test::Unit::TestCase
 
   def test_ios_web
     @driver.get('https://google.com')
-    @driver.find_element(:xpath, "//*[@name='q']").send_keys 'mobile autoamtion testing'
-    search_btn = @driver.find_element(:xpath, "//*[@name='btnG']")
+    @driver.find_element(:xpath, "//*[@name='k']").send_keys 'mobile autoamtion testing'
+    search_btn = @driver.find_element(:xpath, "//*[@value='Go']")
     search_btn.click
   end
 
