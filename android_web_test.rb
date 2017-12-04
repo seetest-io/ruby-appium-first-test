@@ -20,9 +20,13 @@ class TestYourWebAppAndroid < Test::Unit::TestCase
 
   def test_android_web
     @driver.get('https://amazon.com')
-    @driver.find_element(:xpath, "//*[@name='k']").send_keys 'iPhone'
-    search_btn = @driver.find_element(:xpath, "//*[@value='Go']")
-    search_btn.click
+    if @driver.capabilities['reportUrl'] == 'TABLET'
+      @driver.find_element(:xpath, "//*[@name='field-keywords']").send_keys 'mobile autoamtion testing'
+      search_btn = @driver.find_element(:xpath, "//*[@text='Go']")
+    else
+      @driver.find_element(:xpath, "//*[@name='k']").send_keys 'mobile autoamtion testing'
+      search_btn = @driver.find_element(:xpath, "//*[@value='Go']")
+    end
   end
 
   def teardown
