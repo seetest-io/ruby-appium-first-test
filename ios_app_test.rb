@@ -9,6 +9,7 @@ class TestYouriOSApp < Test::Unit::TestCase
             platformName: 'ios',
             testName: 'iOS App Test with Ruby',
             app: 'http://d242m5chux1g9j.cloudfront.net/EriBank.ipa',
+            autoDismissAlerts: true,
             bundleId: 'com.experitest.ExperiBank',
                  },
             appium_lib: {
