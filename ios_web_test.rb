@@ -8,6 +8,7 @@ class TestYourWebAppiOS < Test::Unit::TestCase
             accessKey: ENV['SEETEST_IO_ACCESS_KEY'],
             platformName: 'ios',
             testName: 'iOS Web Test with Ruby',
+            autoDismissAlerts: true,
             browserName: 'safari',
 
         },
