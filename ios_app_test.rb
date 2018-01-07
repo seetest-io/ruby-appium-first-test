@@ -13,7 +13,7 @@ class TestYouriOSApp < Test::Unit::TestCase
             bundleId: 'com.experitest.ExperiBank',
                  },
             appium_lib: {
-              server_url: 'https://beta.seetest.io:443/wd/hub',
+              server_url: 'https://cloud.seetest.io:443/wd/hub',
 		        }
      }
      @driver = Appium::Driver.new(desired_caps, true).start_driver

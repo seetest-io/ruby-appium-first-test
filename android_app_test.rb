@@ -13,7 +13,7 @@ class TestYourAndroidApp < Test::Unit::TestCase
              appActivity: '.LoginActivity'
                  },
          appium_lib: {
-              server_url: 'https://beta.seetest.io:443/wd/hub',
+              server_url: 'https://cloud.seetest.io:443/wd/hub',
             }
      }
      @driver = Appium::Driver.new(desired_caps).start_driver
